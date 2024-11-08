@@ -1,4 +1,4 @@
-pip install -r requirements.txt
+
 import streamlit as st
 import plotly.graph_objects as go
 from datetime import datetime, timedelta
