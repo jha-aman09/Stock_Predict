@@ -1,39 +1,21 @@
-# Sentiment Analysis and Customer Booking Prediction
-
-This repository focuses on sentiment analysis of customer reviews and predictive modeling for customer bookings for British Airways using advanced machine learning techniques. The project leverages LSTM models for text data analysis and predictive analytics.
+# Stock Price Prediction App
 
 ---
 
-## Project Description
+## Overview
 
-This project aims to:
-- Analyze customer reviews to derive sentiments (positive, negative, neutral).
-- Predict customer bookings based on extracted sentiment data and historical patterns.
-- Demonstrate the application of machine learning models in real-world scenarios.
+This Streamlit-based web application provides real-time stock price data visualization and prediction. It offers an intuitive interface for users to analyze stock trends and view future price predictions based on historical data.
 
 ---
 
-## File Descriptions
+## Features
 
-1. **`requirements.txt`**
-   - Contains the list of dependencies and Python packages required to run the project.
-   - Install the dependencies using:
-     ```bash
-     pip install -r requirements.txt
-     ```
-
-2. **`app.py`**
-   - The main application script that:
-     - Handles data preprocessing.
-     - Calls the machine learning models for prediction.
-     - Provides an interface for user interaction or API integration.
-
-3. **`Lstm_model.py`**
-   - Implements the Long Short-Term Memory (LSTM) model for sentiment analysis and predictive analytics.
-   - Includes:
-     - Data preprocessing methods specific to sequential models.
-     - Model architecture and training logic.
-     - Evaluation metrics for performance analysis.
+- **Real-time Stock Data**: Fetches and displays current stock prices and key statistics.
+- **Interactive Charts**: Visualize historical stock prices with adjustable time periods.
+- **Price Prediction**: Utilizes an LSTM model to predict future stock prices.
+- **User-friendly Interface**: Dark-themed, responsive design for enhanced user experience.
+- **Multiple Time Frames**: View stock data in various time frames (1D, 5D, 1M, 6M, YTD).
+- **Support for Global Stocks**: Works with US stocks and includes support for Indian stocks (NSE).
 
 ---
 
@@ -52,13 +34,57 @@ This project aims to:
 
 ---
 
-## Author  
+## Usage
 
-- **LinkedIn**: [Aman Jha](https://www.linkedin.com/in/aman--jha/)  
-- **GitHub**: [Aman Jha](https://github.com/jha-aman09)
+1. Enter a stock symbol in the input field (e.g., AAPL for Apple Inc.).
+2. View the current stock price, daily change, and key statistics.
+3. Explore the interactive chart showing historical prices.
+4. Select different time periods to analyze stock performance.
+5. Click on "Show Price Prediction" to view future price forecasts.
 
 ---
 
-## Acknowledgement
+## Dependencies
 
-Special thanks to the online resources, forums, and the British Airways dataset for aiding in the development of this project.
+- Streamlit
+- Plotly
+- yfinance
+- TensorFlow (for LSTM model)
+- Pandas
+- NumPy
+
+---
+
+## File Structure
+
+- `app.py`: Main application script
+- `lstm_model.py`: Implementation of the LSTM prediction model
+- `requirements.txt`: List of Python dependencies
+
+---
+
+## Contributing
+
+Contributions to improve the app are welcome. Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit (`git commit -am 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
+
+---
+
+## Acknowledgements
+
+- [Streamlit](https://streamlit.io/) for the web app framework
+- [yfinance](https://github.com/ranaroussi/yfinance) for real-time stock data
+- [Plotly](https://plotly.com/) for interactive charts
+
+---
+
+## Contact
+
+Aman Jha - [LinkedIn](https://www.linkedin.com/in/aman--jha/)
+
+Project Link: [https://github.com/jha-aman09/Stock_Predict](https://github.com/jha-aman09/Stock_Predict)
